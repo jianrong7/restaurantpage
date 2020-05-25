@@ -8,5 +8,7 @@ function component() {
 
   return element;
 }
+console.log("eww")
+
 
 document.body.appendChild(component());
