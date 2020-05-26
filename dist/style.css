@@ -114,3 +114,32 @@ nav li {
 .japanese li {
     padding-right: 30px;
 }
+.contact {
+    background-color: #9570cc;
+    margin: 1rem 10rem;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    padding-bottom: 1rem;
+    font-size: 20px;
+}
+.details {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+.openingHours {
+    margin: 15px;
+}
+.phone {
+    margin: 15px;
+}
+.email {
+    margin: 15px;
+}
+.location {
+    margin: 15px;
+}
+.heading {
+    font-size: 22px;
+    font-weight: bold;
+}
