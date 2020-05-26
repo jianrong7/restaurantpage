@@ -25,7 +25,7 @@ const Header = (() => {
   
       nav.appendChild(ul);
   
-      header..appendChild(name);
+      header.appendChild(name);
       header.appendChild(nav);
   
       content.appendChild(header);
