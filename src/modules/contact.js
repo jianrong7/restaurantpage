@@ -1,57 +1,30 @@
 const Contact = (() => {
     const addForm = () => {
+      const emailDiv = document.createElement('div');
+
+      emailDiv.classList.add("email");
+      
       const form = document.createElement('form');
-  
-      const h1 = document.createElement('h1');
-      h1.innerText = 'Send us an email';
-  
-      const nameField = document.createElement('div');
-      nameField.innerHTML = `
-        <label for="name">Your Name</label>
-        <input type="text" name="name" id="name" required />
+
+      form.innerHTML = `
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label><br>
+        <input type="text" id="message" name="message" cols="30" rows="10"><br>
+        <input type="submit" value="Submit">
       `;
   
-      const emailField = document.createElement('div');
-      emailField.innerHTML = `
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required />
-      `;
-  
-      const titleField = document.createElement('div');
-      titleField.innerHTML = `
-        <label for="title">Title</label>
-        <input type="text" name="title" id="title" required />
-      `;
-  
-      const messageLabel = document.createElement('label');
-      messageLabel.setAttribute('for', 'message');
-      messageLabel.innerText = 'Message';
-  
-      const textarea = document.createElement('textarea');
-      textarea.setAttribute('name', 'message');
-      textarea.setAttribute('id', 'message');
-      textarea.setAttribute('cols', '30');
-      textarea.setAttribute('rows', '10');
-      textarea.setAttribute('required', 'true');
-  
-      const formBtn = document.createElement('button');
-      formBtn.classList.add('form-btn');
-      formBtn.innerText = 'Send';
-  
-      form.appendChild(h1);
-      form.appendChild(nameField);
-      form.appendChild(emailField);
-      form.appendChild(titleField);
-      form.appendChild(messageLabel);
-      form.appendChild(textarea);
-      form.appendChild(formBtn);
+      emailDiv.appendChild(h3);
+      emailDiv.appendChild(form);
   
       return form;
     };
   
     const addInfoSection = () => {
-      const section = document.createElement('section');
-      section.classList.add('info-section');
+      const section = document.createElement('div');
+      section.classList.add('details');
   
       const openingHoursInfo = document.createElement('div');
       openingHoursInfo.innerHTML = `
