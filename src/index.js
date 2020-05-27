@@ -24,7 +24,6 @@ const displayContact = () => {
 document.addEventListener('DOMContentLoaded', () => {
   Header.setHeader();
   Home.setHome();
-  Contact.setContact();
 
   const menuBtn = document.getElementById("viewMenu");
   const homeNav = document.getElementById("home");

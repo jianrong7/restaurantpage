@@ -1,9 +1,11 @@
 const Contact = (() => {
     const addForm = () => {
       const emailDiv = document.createElement('div');
-
       emailDiv.classList.add("email");
       
+      const h3 = document.createElement('h3');
+      h3.innerText = "Send us an email";
+
       const form = document.createElement('form');
 
       form.innerHTML = `
@@ -12,14 +14,14 @@ const Contact = (() => {
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email"><br>
         <label for="message">Message:</label><br>
-        <input type="text" id="message" name="message" cols="30" rows="10"><br>
+        <input type="text" id="message" name="message"><br>
         <input type="submit" value="Submit">
       `;
   
       emailDiv.appendChild(h3);
       emailDiv.appendChild(form);
   
-      return form;
+      return emailDiv;
     };
   
     const addInfoSection = () => {
@@ -27,31 +29,31 @@ const Contact = (() => {
       section.classList.add('details');
   
       const openingHoursInfo = document.createElement('div');
+      openingHoursInfo.classList.add("openingHours");
       openingHoursInfo.innerHTML = `
-        <i class="fas fa-coffee"></i>
-        <h3>Opening Hours</h3>
-        <p>7:00am - 10:00pm</p>
+        <div class="heading">Opening Hours</div>
+        <div>10:00am - 10:00pm</div>
       `;
   
       const phoneInfo = document.createElement('div');
+      phoneInfo.classList.add("phone");
       phoneInfo.innerHTML = `
-        <i class="fas fa-phone"></i>
-        <h3>Phone</h3>
-        <p>+1-204-444-0237</p>
+        <div class="heading">Phone</div>
+        <div>+65 9999 1111</div>
       `;
   
       const emailInfo = document.createElement('div');
+      emailInfo.classList.add("email")
       emailInfo.innerHTML = `
-        <i class="fas fa-envelope"></i>
-        <h3>Email</h3>
-        <p>enquiry@lorem.cafe</p>
+        <div class="heading">Email</div>
+        <div>enquiry@eastern.cafe</div>
       `;
   
       const locationInfo = document.createElement('div');
+      locationInfo.classList.add("location");
       locationInfo.innerHTML = `
-        <i class="fas fa-map-marked-alt"></i>
-        <h3>Location</h3>
-        <p>Somewhere in Lorem</p>
+        <div class="heading">Location</div>
+        <div>Somewhere in SG</div>
       `;
   
       section.appendChild(openingHoursInfo);
@@ -61,12 +63,11 @@ const Contact = (() => {
   
       return section;
     };
-  
     const setContact = () => {
       const content = document.getElementById('content');
   
-      const main = document.createElement('main');
-      main.classList.add('contact-main');
+      const main = document.createElement('div');
+      main.classList.add('contact');
   
       const form = addForm();
       const section = addInfoSection();
@@ -76,7 +77,6 @@ const Contact = (() => {
   
       content.appendChild(main);
     };
-  
     const setContactActive = () => {
       const liContact = document.getElementById('contact');
       liContact.classList.add('active');

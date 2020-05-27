@@ -32,6 +32,7 @@ header {
 header div {
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 nav ul {
     display: flex;
@@ -39,6 +40,7 @@ nav ul {
 }
 nav li {
     margin: 0px 10px;
+    cursor: pointer;
 }
 .home {
     display: flex;
@@ -75,8 +77,9 @@ nav li {
     outline:none;
 }
 .menu {
-    background-color: #9570cc;
+    background-color: #222222;
     margin: 0rem 10rem;
+    color: white;
     display: flex;
     justify-content: space-around;
     border-radius: 5px;
@@ -115,13 +118,14 @@ nav li {
     padding-right: 30px;
 }
 .contact {
-    background-color: #9570cc;
+    background-color: #222222;
     margin: 1rem 10rem;
     display: flex;
     justify-content: space-around;
     border-radius: 5px;
     padding-bottom: 1rem;
     font-size: 20px;
+    color: white;
 }
 .details {
     padding-top: 1.5rem;
