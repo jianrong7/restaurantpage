@@ -45,7 +45,12 @@ const Menu = (() => {
       content.appendChild(div);
     };
   
-    return { setMenu };
+    const setMenuActive = () => {
+      const liMenu = document.getElementById('menu');
+      liMenu.classList.add('active');
+    };
+  
+    return { setMenu, setMenuActive };
   })();
   
   export default Menu;

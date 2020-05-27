@@ -3,8 +3,9 @@ const Header = (() => {
       const content = document.getElementById('content');
   
       const header = document.createElement('header');
+
       const name = document.createElement('div');
-      
+      name.setAttribute("id", "logo")
       name.innerText = 'Eastern Café';
 
       const nav = document.createElement('nav');
