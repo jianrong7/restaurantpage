@@ -82,7 +82,7 @@ const Contact = (() => {
       liContact.classList.add('active');
     };
   
-    return { setContact, setContactActive };
+    return { setContact };
   })();
   
   export default Contact;

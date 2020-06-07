@@ -8,12 +8,11 @@ const clearContent = () => {
   const listItems = document.querySelectorAll('header li');
 
   content.removeChild(content.lastChild);
-  listItems.forEach(listItem => listItem.classList.remove('active'));
 };
 const displayHome = () => {
   clearContent();
   Home.setHome();
-  Home.setHomeActive();
+
 
   const menuBtn = document.getElementById("viewMenu");
   menuBtn.addEventListener("click", displayMenu);
@@ -21,18 +20,18 @@ const displayHome = () => {
 const displayMenu = () => {
   clearContent();
   Menu.setMenu();
-  Menu.setMenuActive();
+
 }
 const displayContact = () => {
   clearContent();
   Contact.setContact();
-  Contact.setContactActive();
+
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   Header.setHeader();
   Home.setHome();
-  Home.setHomeActive();
+
 
   const menuBtn = document.getElementById("viewMenu");
   const logo = document.getElementById("logo");

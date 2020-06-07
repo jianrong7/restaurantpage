@@ -30,7 +30,7 @@ const Home = (() => {
       liHome.classList.add('active');
     };
   
-    return { setHome, setHomeActive };
+    return { setHome };
   })();
   
   export default Home;

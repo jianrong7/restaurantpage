@@ -50,7 +50,7 @@ const Menu = (() => {
       liMenu.classList.add('active');
     };
   
-    return { setMenu, setMenuActive };
+    return { setMenu };
   })();
   
   export default Menu;
