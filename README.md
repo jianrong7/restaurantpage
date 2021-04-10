@@ -21,3 +21,9 @@ Vanilla JS Restaurant Page created with webpack. Done for The Odin Project.
 
 #### What I can work on
 - Make website mobile responsive
+
+### To - Do
+- Code out menu and contact page
+- Implement the menu and contact page using webpack
+- Read up again on modules (why can i import modules i did not export)
+- JS is really getting more interesting
