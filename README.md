@@ -1,6 +1,6 @@
 # Restaurant Page
 
-### [Live Demo](https://jianrong7.github.io/tictactoe/)
+### [Live Demo](https://jianrong7.github.io/restaurantpage/)
 ### Inspired by [Lee's Donuts](https://www.leesdonuts.ca/)
 
 #### 📝 Description
