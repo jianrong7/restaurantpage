@@ -127,3 +127,57 @@ td {
 .dataDes {
     padding-top: 10px;
 }
+.contactContainer {
+    font-size: 25px;
+    font-weight: bold;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.contactHead {
+    margin: 40px 0px;
+}
+.contactDetail {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contactDetails {
+    width: 45%;
+}
+.locationDet, .timeDet, .numberDet, .form {
+    margin-bottom: 30px;
+}
+.map {
+    width: 45%;
+}
+form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+input {
+    border: none;
+    border-bottom: 2px solid #284268;
+    height: 50px;
+    font-size: 20px;
+    width: 200px;
+    margin-top: 20px;
+}
+#submit {
+    border: none;
+    background-color: #f3d46d;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 1024px) {
+    .contactDetail {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    #map {
+        height: 300px;
+        width: 400px;
+    }
+}
