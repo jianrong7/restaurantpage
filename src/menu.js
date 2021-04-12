@@ -1,5 +1,8 @@
+import { pageLoad } from "./pageLoad"
 const renderMenuPage = (() => {
     const contentContainer = document.querySelector('#content');
+    contentContainer.innerHTML = ''
+    pageLoad()
     const menu = document.createElement('div');
     menu.innerHTML = `
     <img src="assets/donutMenu.png" id="menu">
@@ -51,6 +54,6 @@ const renderMenuPage = (() => {
         </tr>
     </table>`
 
-    contentContainer.appendChild(home)
-})();
-export { renderHomePage }
+    contentContainer.appendChild(menu)
+});
+export { renderMenuPage }

@@ -12,5 +12,5 @@ const pageLoad = (() => {
     header.classList.add('header');
 
     contentContainer.appendChild(header);
-})();
+});
 export { pageLoad };

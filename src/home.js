@@ -1,5 +1,8 @@
+import { pageLoad } from "./pageLoad"
 const renderHomePage = (() => {
     const contentContainer = document.querySelector('#content');
+    contentContainer.innerHTML = ''
+    pageLoad()
     const home = document.createElement('div');
     home.innerHTML = `
     <div class="backgroundImage">
@@ -7,7 +10,7 @@ const renderHomePage = (() => {
     <div class="detailsContent">
         <div class="details">
             <p>Delicious donuts!</p>
-            <button class="menu">Menu</button>
+            <button class="menu nav menuNav">Menu</button>
         </div>
         <div class="locDateContent">
             <div class="locDate">
@@ -19,5 +22,5 @@ const renderHomePage = (() => {
     </div>`
 
     contentContainer.appendChild(home)
-})();
+});
 export { renderHomePage }
