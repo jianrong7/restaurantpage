@@ -100,3 +100,30 @@ html {
 .locDate p {
     padding: 10px;
 }
+#menu {
+    width: 100vw;
+}
+.menuTable {
+    margin: auto;
+    width: 700px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+th {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #284268;
+    padding-bottom: 20px;
+}
+td {
+    width: 200px;
+}
+.dataTitle {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 40px;
+}
+.dataDes {
+    padding-top: 10px;
+}
